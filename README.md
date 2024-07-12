@@ -10,14 +10,14 @@ This repository is used to record the development processes （allocation algori
 
 LubanCat-4是野火科技基于RockChip RK3588s设计的一款低功耗、高性能单板电脑。LubanCat-4不仅能作为高性能单板电脑来使用，还可以作为嵌入式主板， 用于显示、控制、网络传输，文件存储，边缘计算等多种场景。
 
-![概述1](image/20240712132257.png)
-![概述2](image/20240712132313.png)
+![概述1](image/Pasted image 20240712132257.png)
+![概述2](image/Pasted image 20240712132313.png)
 
 ### 资源概述
 
-![资源概述1](image/20240712132335.png)
-![资源概述1](image/20240712132349.png)
-![资源概述1](image/20240712132414.png)
+![资源概述1](image/Pasted image 20240712132335.png)
+![资源概述2](image/Pasted image 20240712132349.png)
+![资源概述3](image/Pasted image 20240712132414.png)
 
 
 | 板卡名称        | LubanCat-4                                 |
