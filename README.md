@@ -44,3 +44,38 @@ LubanCat-4是野火科技基于RockChip RK3588s设计的一款低功耗、高性
 | RTC电池接口     | 支持RTC功能                                    |
 | 风扇接口        | 支持安装风扇散热                                   |
 
+
+## 烧录镜像到eMMC
+
+### 工具获取
+
+下载mirroring 文件夹中的unbuntu镜像文件，以及software中的烧录工具 **RKDevTool** 和驱动程序 **DriverAssitant**，将这些压缩文件下载并解压缩（unbuntu镜像文件解压缩为img格式），同时安装驱动程序 **DriverAssitant**（其它文件压缩即可，不需要安装）安装反式如下图：双击 DriverInstall.exe 进入驱动安装界面，点击 驱动安装 即可开始安装驱动。如果不确定以前是否安装过旧版驱动， 先点击驱动卸载移除旧版本驱动程序，再点击驱动安装。
+
+![DriverInstall](image/DriverInstall.png)
+
+### MASKROM模式烧录镜像
+
+我们打开 RKDevTool 烧录工具，并设置板卡进入烧录模式。
+
+![打开 RKDevTool 烧录工具](image/1.png)
+
+```
+1.准备一根Type-C线，一端连接电脑，一端预留备用
+2.连接电源线
+3.按住MR按键(MASKROM)不松开，先将预留的USB线插入板卡的USB-OTG接口，再插入电源
+4.等待软件提示 发现一个MASKROM设备，再松开按键
+5.如果不成功，重复2-4步骤。
+```
+
+![MR-1](image/MR-1.png)
+然后就可以点击 固件 选择要烧录的镜像，如update.img然后打开
+![MR-2](image/MR-2.png)
+等待固件加载完成，然后点击升级，开始烧录固件
+![MR-3](image/MR-3.png)
+镜像烧录成功，如下图
+![MR-4](image/MR-4.png)
+
+
+
+
+
